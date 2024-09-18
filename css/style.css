@@ -73,8 +73,10 @@
     padding-top: 40%;
     height: 100vh;
     background-image: url(../img/Cover2-foreground.jpg); background-size: cover;
+    opacity: 0.2;
+    mask-image: linear-gradient(to bottom, black, black, black, black, black, transparent);
 
-  }#front-text2 {
+  }#front-text1 {
     padding-top: 40%;
     height: 100vh;
     background-image: url(../img/Cover1.jpg); background-size: cover;
