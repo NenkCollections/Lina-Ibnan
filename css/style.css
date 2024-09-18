@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300;1,400&family=Dancing+Script:wght@400;600;700&family=Playball&display=swap");
+
+.font-dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.font-playball {
+  font-family: "Playball", cursive;
+}
+
+* {
+  font-family: "Open Sans", cursive;
+}
+
+.bg-berem {
+  background-color: #8785a2;
+}
+
+.text-berem {
+  color: #828191;
+}
+
+.bg-wakwak {
+  background-color: #ffe2e2;
+}
+
+.text-wakwak {
+  background-color: #ffe2e2;
+}
+
+.bg-fee {
+  background-color: #f6f6f6;
+}
+
+.bg-kulit {
+  background-color: #ffc7c7;
+}
+
+.fs-60 {
+  font-size: 60px;
+}
+
+.fs-45 {
+  font-size: 45px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.scale {
+  overflow: hidden;
+  transition: 0.5s;
+}
+.scale:hover {
+  transform: scale(1.05);
+}
+
+.norek {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  #front-image {
+    display: none;
+  }
+  #front-text {
+    padding-top: 40%;
+    height: 100vh;
+    background-image: url(../img/Cover2-foreground.jpg); background-size: cover;
+  }
+}
+
+#front-image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateY(0.25rem);
+      opacity: 0;
+  }
+
+  10% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  100% {
+      transform: translateY(0);
+      opacity: 0;
+  }
+}
+
+.mouse-animation>.scroll-animation {
+  width: 2rem;
+  height: 3rem;
+  border-radius: 25%;
+  background-color: #3d3d3d;
+  animation-name: scroll;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin-icon {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.spin-button {
+  animation: spin-icon 5s linear infinite;
+}
+
+@keyframes love {
+  50% {
+      transform: translateY(1rem);
+  }
+}
+
+.animate-love {
+  animation: love 5s ease-in-out infinite;
+}
